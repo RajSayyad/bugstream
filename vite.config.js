@@ -14,7 +14,10 @@ const baseConfig = {
       port: port, 
       origin: `http://localhost:${port}`, 
       cors: { 
-        origin: '*', 
+        origin: [
+          `http://localhost:${port}`,
+          `http://127.0.0.1:${port}`,
+        ],
         methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
       } 
   },
