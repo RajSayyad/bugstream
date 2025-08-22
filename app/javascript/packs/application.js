@@ -1,4 +1,5 @@
 import "../stylesheets/application.scss";
+import "plyr-react/plyr.css";
 import ReactRailsUJS from "react_ujs";
 import App from "../src/App";
 
