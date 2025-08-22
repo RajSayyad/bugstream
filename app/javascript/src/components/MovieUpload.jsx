@@ -59,7 +59,7 @@ export default function MovieUpload() {
         </div>
         <div>
           <label className="block mb-1 font-semibold text-white">Videos</label>
-          <input type="file" accept="video/*,.mkv" multiple onChange={handleVideosChange} className="w-full text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-purple-700 file:text-white file:font-semibold" />
+          <input type="file" accept="video/*" multiple onChange={handleVideosChange} className="w-full text-white file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-purple-700 file:text-white file:font-semibold" />
         </div>
         <button type="submit" disabled={loading} className="bg-purple-700 text-white px-4 py-2 rounded-lg font-bold hover:bg-purple-800 transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
           {loading ? "Uploading..." : "Upload Movie"}
