@@ -11,7 +11,7 @@ const baseConfig = {
   css: { postcss: postCssConfig },
     server: { 
       host: '0.0.0.0', 
-      port: 8000, 
+      port: port, 
       origin: `http://localhost:${port}`, 
       cors: { 
         origin: '*', 
