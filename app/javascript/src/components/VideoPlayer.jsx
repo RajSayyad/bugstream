@@ -8,7 +8,13 @@ export default function VideoPlayer({ src, poster }) {
       <Plyr
         source={{
           type: "video",
-          title: "Sample Movie",
+export default function VideoPlayer({ src, poster, title }) {
+  return (
+    <div className="relative w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-xl bg-black">
+      <Plyr
+        source={{
+          type: "video",
+          title: title,
           sources: [
             { src, type: "video/mp4" },
           ],
