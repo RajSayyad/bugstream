@@ -222,7 +222,7 @@ GEM
     rdoc (6.14.2)
       erb
       psych (>= 4.0.0)
-    react-rails (2.7.1)
+    react-rails (3.2.1)
       babel-transpiler (>= 0.7.0)
       connection_pool
       execjs
@@ -335,7 +335,7 @@ DEPENDENCIES
   jsbundling-rails
   puma (>= 5.0)
   rails (~> 7.2.2, >= 7.2.2.1)
-  react-rails (~> 2.7.1)
+  react-rails (~> 3.2.1)
   rubocop-rails-omakase
   selenium-webdriver
   sprockets-rails
