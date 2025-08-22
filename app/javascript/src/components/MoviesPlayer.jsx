@@ -37,7 +37,6 @@ export default function MoviePlayer() {
   const videos = movie.videos || [];
   const selectedVideo = videos[selectedIdx];
 
-  console.log("Selected Video URL:", selectedVideo);
 
   return (
     <div className="min-h-screen w-full px-0 py-0 bg-gradient-to-br from-gray-900 via-purple-900 to-black">
