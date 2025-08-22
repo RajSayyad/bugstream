@@ -9,7 +9,15 @@ const port = process.env.DEVSERVER_PORT || 8000;
 const baseConfig = {
   assetsInclude: ["**/*.yaml"],
   css: { postcss: postCssConfig },
-  server: { port, origin: `http://localhost:${port}` },
+    server: { 
+      host: '0.0.0.0', 
+      port: 8000, 
+      origin: `http://localhost:${port}`, 
+      cors: { 
+        origin: '*', 
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+      } 
+  },
   build: {
     manifest: true,
     sourcemap: true,

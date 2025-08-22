@@ -13,7 +13,6 @@ export default function MoviesList() {
       .catch(err => setError(err.response?.data?.error || err.message))
       .finally(() => setLoading(false));
   }, []);
-  console.log(movies);
   if (loading) {
     return <div className="p-6 text-center text-gray-500">Loading movies...</div>;
   }

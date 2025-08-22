@@ -1,6 +1,8 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  # Allow connections from any host (for mobile access)
+  config.hosts.clear
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
@@ -40,6 +42,7 @@ Rails.application.configure do
   # Disable caching for Action Mailer templates even if Action Controller
   # caching is enabled.
   config.action_mailer.perform_caching = false
+  config.web_console.permissions = "192.168.0.0/16"
 
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
 
