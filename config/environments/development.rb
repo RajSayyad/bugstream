@@ -2,7 +2,9 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Allow connections from any host (for mobile access)
-  config.hosts.clear
+  # Allow connections from .local domains and local IP ranges (for mobile access)
+  config.hosts << /.*\.local/
+  config.hosts << "192.168.0.0/16"
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
