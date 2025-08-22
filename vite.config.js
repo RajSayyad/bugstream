@@ -12,14 +12,11 @@ const baseConfig = {
     server: { 
       host: '0.0.0.0', 
       port: port, 
-      origin: `http://localhost:${port}`, 
-      cors: { 
-        origin: [
-          `http://localhost:${port}`,
-          `http://127.0.0.1:${port}`,
-        ],
-        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
-      } 
+      origin: `http://localhost:${port}`,
+      cors: {
+        origin: '*', 
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      }
   },
   build: {
     manifest: true,
