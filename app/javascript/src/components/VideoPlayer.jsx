@@ -2,12 +2,6 @@ import React from "react";
 import Plyr from "plyr-react";
 import "plyr-react/plyr.css";
 
-export default function VideoPlayer({ src, poster }) {
-  return (
-    <div className="relative w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-xl bg-black">
-      <Plyr
-        source={{
-          type: "video",
 export default function VideoPlayer({ src, poster, title }) {
   return (
     <div className="relative w-full max-w-5xl mx-auto aspect-video rounded-xl overflow-hidden shadow-xl bg-black">
